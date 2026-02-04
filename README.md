@@ -69,8 +69,11 @@ python predict.py
 ```
 ## 📊 Datasets
 **RNAdecoyDB**
+
 Located in data/RNAdecoyDB. This dataset contains negative samples that are physicochemically matched to known RNA binders, preventing models from relying on simple property artifacts.
+
 **External Validation**
+
 Located in data/external datasets. Includes R-SIM and SM2miR datasets used to validate the generalization capability of TRN.
 ## 💊 Zinc-TRN Library
 The zinc-TRN folder contains zincTRN.csv, a curated list of approximately 6.96 million molecules from the ZINC database identified by TRN as having high RNA-binding potential.

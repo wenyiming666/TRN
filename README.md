@@ -42,26 +42,27 @@ To overcome this limitation, we introduce:
 git clone https://github.com/yourusername/TRN.git
 cd TRN
 ```
-**2. Create a virtual environment**
-We recommend using Conda to manage dependencies.
+**2. Create environment from YAML**
+
+We provide a TRN.yaml file that contains all necessary dependencies.
 ```Bash
-conda create -n trn_env python=3.8
-conda activate trn_env
-```
-**3. Install dependencies**
-```Bash
-pip install torch torchvision torchaudio  # Adjust for your CUDA version
-pip install rdkit-pypi pandas numpy scikit-learn pyyaml
+# Create the environment
+conda env create -f TRN.yaml
+
+# Activate the environment
+conda activate TRN
 ```
 
 ## 🚀 Usage
 **1. Training the TRN Model**
+
 To train the model from scratch using RNAdecoyDB, navigate to the training directory. Ensure your configuration is set in the yaml folder.
 ```Bash
 cd TRN/Train
 python train_TRN.py
 ```
 **2. Prediction**
+
 To use the pre-trained model located in TRN/check point to predict the RNA-binding potential of new molecules:
 ```Bash
 cd TRN/Predict
